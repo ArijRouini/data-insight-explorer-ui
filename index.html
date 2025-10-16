@@ -82,6 +82,9 @@
 
 <script>
   const BACKEND = "https://data-insight-api.onrender.com";
+    // show the real URL in the little “Backend:” label
+  const apiLabel = document.getElementById('api');
+  if (apiLabel) apiLabel.textContent = BACKEND;
 
   // DOM
   const whoamiEl   = document.getElementById('whoami');
